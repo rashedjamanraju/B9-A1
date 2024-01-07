@@ -1,10 +1,258 @@
-/* font-family: 'Inter', sans-serif;
-font-family: 'Merriweather', serif; */
-
-/* Basic css reset */
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
 
+.container {
+  width: 82.5%;
+  max-width: 1320px;
+  margin: 0 auto;
+  border-radius: 16px;
+}
 
+.txt-primary {
+  color: #f00;
+}
+
+.btn-primary {
+  border-radius: 8px;
+  background: #f00;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  border: none;
+  padding: 16px 32px;
+  max-width: 167px;
+  cursor: pointer;
+}
+
+.btn-primary:hover{
+    background-color: #0a0318;
+    transition: 1s;
+}
+.banner {
+  background: url("/resources/Banner\ Image.png") center/cover no-repeat,
+    linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0) 100%);
+  margin-top: 50px;
+}
+.section-heading {
+  max-width: 632px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 177px 344px;
+}
+
+.section-heading p {
+  color: #fff;
+  font-family: Merriweather;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* width: 100%; */
+}
+
+.section-heading h1 {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 95px; /* 131.944% */
+}
+
+.cat-container {
+  width: 50.18122125%;
+  max-width: 802.89954px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+.cat-container * {
+  width: 100%;
+}
+
+.cat-container .cat-image img {
+  width: 100%;
+  display: block;
+}
+
+.cat-container .cat-heading {
+  text-align: center;
+}
+
+.cat-heading h2 {
+  color: #f00;
+  font-family: Inter;
+  font-size: 88px;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+
+.cat-heading p {
+  color: #f00;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.cat-heading h3 {
+  color: #070211;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+
+.join-now {
+  margin-top: 120px;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../resources/Vectorrr.png");
+  /* background-position: center; */
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.join-now-heading {
+  max-width: 697px;
+}
+
+.join-now-heading .join-now-heading-title {
+  color: #fff;
+  font-family: Merriweather;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 88px; /* 137.5% */
+  letter-spacing: 7.04px;
+}
+
+.join-now-heading .join-now-description {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+
+.join-now-details-desc h3 {
+  color: #070211;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  text-transform: capitalize;
+}
+
+.join-now-details {
+  background-color: burlywood;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.join-now-details-desc {
+  max-width: 549px;
+}
+
+.btn-top-margin {
+  margin-top: 48px;
+}
+
+footer {
+  margin-top: 120px;
+  background-color: #070211;
+  max-width: 1600px;
+  margin: 120px auto 0px auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 160px 275px 50px 140px;
+}
+
+.footer-top p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 166.667% */
+  max-width: 375px;
+}
+
+.footer-top .contact p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 166.667% */
+}
+
+.contact-call {
+  display: flex;
+  gap: 16px;
+}
+.contact-web {
+  display: flex;
+  gap: 16px;
+}
+
+.contact .icon {
+  display: flex;
+  align-items: center;
+}
+hr {
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 82.5%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 48px 0px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 82.5%;
+  padding-top: 50px;
+  padding-bottom: 120px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 166.667% */
+}
+.footer-bottom a{
+    color:white
+}
