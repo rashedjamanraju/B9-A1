@@ -176,6 +176,8 @@
 .btn-top-margin {
   margin-top: 48px;
 }
+
+/* offer banner section styles */
 .offer-banner {
   display: flex;
   justify-content: space-between;
@@ -259,6 +261,62 @@
   width: 100%;
 }
 
+/* holidays sale banner section */
+.holidays-sale {
+  margin-top: 120px;
+  /* background-color: greenyellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.holidays-sale-heading {
+  max-width: 890.172px;
+    text-align: center;
+}
+.hs-sm-title {
+  color: #070211;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.hs-big-title {
+  color: #070211;
+  font-family: Merriweather;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 28px;
+}
+.hs-heading-description {
+  color: rgba(7, 2, 17, 0.6);
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 160% */
+  margin-bottom: 64px;
+}
+
+.holidays-sale-banner{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-image: url("../resources/Rectangle 2.png"),url("../resources/Rectangle 1.png");
+  background-repeat: no-repeat;
+  background-position: bottom, right 3%;
+  width: 100%;
+}
+
+.holidays-sale-banner > img{
+  position: relative;
+  top: 81px;
+  right: 22%;
+}
 /* portfolio section */
 .portfolio {
   margin-top: 120.07px;
@@ -382,7 +440,16 @@
   border: none;
   outline: none;
   border-radius: 50px 0px 0px 50px;
-  max-width: 438px;
+  width: 438px;
+  padding-left: 30px;
+}
+.input-area input[type="text"]::placeholder {
+  color: rgba(7, 2, 17, 0.3);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* footer styles */
