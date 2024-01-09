@@ -126,7 +126,6 @@
     url(/resources/Vectorrr.png);
   align-items: center;
   justify-content: center;
-  /* padding: 0 126px; */
   background-repeat: no-repeat;
   gap: 39.17px;
 }
@@ -377,19 +376,18 @@
 }
 
 .single-project img {
-  vertical-align: bottom;
   border-radius: 16px;
+  display: block;
 }
 
 .single-project img:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s ease;
-  outline: 10px solid #f00;
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+  outline: 5px solid #f00;
 }
 
 /* newsletter styles */
 .newsletter {
-  background-color: aqua;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -439,9 +437,11 @@
   display: flex;
   max-width: 648px;
   margin-top: 48px;
+  border-radius: 50px;
+  box-shadow: 0 6px 10px 10px rgba(255, 0, 0, 0.05);
 }
 .input-area input[type="submit"] {
-  border: none;
+  border: 0;
   outline: none;
   color: #fff;
   text-align: center;
@@ -454,6 +454,7 @@
   border-radius: 0px 50px 50px 0px;
   background: #f00;
   padding: 24px 56px 24px 56px;
+  cursor: pointer;
 }
 
 .input-area input[type="text"] {
@@ -462,6 +463,8 @@
   border-radius: 50px 0px 0px 50px;
   width: 438px;
   padding-left: 30px;
+  font-size: 20px;
+  font-family: inter;
 }
 .input-area input[type="text"]::placeholder {
   color: rgba(7, 2, 17, 0.3);
@@ -474,16 +477,17 @@
 
 /* footer styles */
 footer {
-  margin-top: 120px;
   background-color: #070211;
-  max-width: 1600px;
-  margin: 120px auto 0px auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-top: 120px;
 }
 
 .footer-top {
   display: flex;
+  max-width: 1320px;
   justify-content: space-between;
-  padding: 160px 275px 50px 140px;
+  margin: 0 auto;
 }
 
 .footer-top p {
@@ -496,7 +500,8 @@ footer {
   max-width: 375px;
 }
 
-.footer-top .contact p {
+.footer-top .contact p,
+.footer-top .contact p a {
   color: #fff;
   font-family: Inter;
   font-size: 24px;
@@ -521,11 +526,9 @@ footer {
   align-items: center;
 }
 hr {
-  max-width: 1320px;
-  margin: 0 auto;
-  width: 82.5%;
   height: 1px;
   background: rgba(255, 255, 255, 0.15);
+  margin: 50px auto;
 }
 
 .social {
@@ -533,17 +536,11 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  padding: 48px 0px;
 }
 
 .footer-bottom {
   display: flex;
   justify-content: space-between;
-  max-width: 1320px;
-  margin: 0 auto;
-  width: 82.5%;
-  padding-top: 50px;
-  padding-bottom: 120px;
   color: #fff;
   font-family: Inter;
   font-size: 24px;
